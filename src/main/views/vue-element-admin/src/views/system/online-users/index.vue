@@ -7,26 +7,26 @@
       style="width: 100%"
     >
       <el-table-column
-        prop="loginName"
-        label="用户"
+        prop="username"
+        label="username"
       />
       <el-table-column
-        prop="username"
-        label="姓名"
+        prop="nickname"
+        label="nickname"
       />
       <el-table-column
         prop="loginTime"
-        label="登陆时间"
+        label="loginTime"
       />
       <el-table-column
-        label="操作"
+        label="operations"
       >
         <template slot-scope="scope">
           <el-button
             type="text"
             size="small"
             @click="handleForceLogout(scope.row)"
-          >强制退出
+          >Log Out
           </el-button>
         </template>
       </el-table-column>

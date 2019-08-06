@@ -62,8 +62,8 @@ public class OnlineUsersController {
                     if (!ADMIN_LOGIN_NAME.equals(user.getUsername()) && !username.equals(user.getUsername())) {
                         // 封装视图层数据
                         OnlineUserVo onlineUser = new OnlineUserVo();
-                        onlineUser.setLoginName(user.getUsername());
                         onlineUser.setUsername(user.getUsername());
+                        onlineUser.setNickname(user.getNickname());
                         onlineUser.setLoginTime(userDetails.getLoginTime());
                         userList.add(onlineUser);
                     }

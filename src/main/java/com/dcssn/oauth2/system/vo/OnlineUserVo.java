@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
 @Data
 public class OnlineUserVo {
     /**
-     * 登录名
-     */
-    private String loginName;
-    /**
      * 用户名
      */
     private String username;
+    /**
+     * 昵称
+     */
+    private String nickname;
     /**
      * 登陆时间
      */
